@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arjun Palkhade">
+    <meta name="description" content="Arjun Palkhade's Personal Website">
+    <title><author>Arjun Palkhade</author> | Contact </title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <nav class="navbar">
+        <div class="navbar_container" style="display: flex;">
+            <ul>
+                <h3 class="nav_logo">Arjun Palkhade</h3>
+                <h6 style="font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 10px; padding-top: 4px;">Computer Science | UC Berkeley</h6>
+            </ul>
+            <div class="navbar_menu">
+                <ul class="nav_menu">
+                    <li class="nav_item"><a class="nav_link" href="index.html"><b>About</b></a></li>
+                    <li class="nav_item"><a class="nav_link" href="work.html">Work</a></li>
+                    <li class="nav_item"><a class="nav_link" href="contact.html">Contact</a></li>
+                    <li class="soc_container"><a href="https://www.instagram.com/arjunpalkhade/"><img class="soc_icon" src="insta.png"></a></li>
+                    <li class="soc_container"><a href="https://www.youtube.com/channel/UCEVQmfjLUuiDL-9hmECtFLQ"><img class="soc_icon" src="youtube.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="intro">
+            <h2 id="title">Contact Information</h2>
+            <div class="hr_1"></div>
+            <div class="intro_container">
+                <div class="grid-container">
+                    <div class="item1">
+                        <ul style="padding-top:15px">
+                            <h5 style="padding-bottom: 7px;">Email:<span style="font-weight:normal; font-size:20px;"> arjunpalkhade@berkeley.edu </span></h5>
+                            <h5 style="padding-bottom: 7px;">Phone:<span style="font-weight:normal; font-size:20px;"> (424)-537-7355 </span></h5>
+                            <h5 style="padding-bottom: 7px;">LinkedIn:<span style="font-weight:normal; font-size:20px;"><a href="https://www.linkedin.com/in/arjun-palkhade-01a982205/"> Arjun Palkhade</a></span></h5>
+                            <h5 style="padding-bottom: 7px;">Instagram:<span style="font-weight:normal; font-size:20px;"><a href="https://www.instagram.com/arjunpalkhade/"> @arjunpalkhade</a></span></h5>
+                            <h5 style="padding-bottom: 7px;">Twitter:<span style="font-weight:normal; font-size:20px;"><a href="https://twitter.com/ArjunPalkhade"> @ArjunPalkhade</a></span></h5>
+                            <h5 style="padding-bottom: 7px;">Youtube:<span style="font-weight:normal; font-size:20px;"><a href="https://www.youtube.com/channel/UCEVQmfjLUuiDL-9hmECtFLQ"> Arjun Palkhade</a></span></h5>
+                        </ul>
+                    </div>
+                    <div class="item2" style="padding-top: 15px;">
+                        <form style="width: 25rem;">
+                            <h6 style="text-align: center; padding-bottom: 10px">Alternatively, reach out to me directly:</h6>
+                            <p><label>Name:   </label><input type="text" id="name" style="padding-bottom: 5px"></p>
+                            <p><label>Email:   </label><input type="text" id="email" style="padding-bottom: 5px"></p>
+                            <p><label>Inquiry:  </label><input type="text" id="inquiry" style="padding-bottom: 20px"></p>
+                            <input type="submit" onclick= "response()">
+                        </form>
+                    </div>  
+                </div>
+            </div>
+            <div class="hr_1"></div>
+            <br>
+            <br>
+            <button style="height: 30px; color: #fbe9e1; background-color: #9f7167;" onclick="alert('Hello There!')">Click here to say hi!</button>
+    </main>
+
+   
+
+    <script type="text/javascript">
+        function response() {
+            var name = document.getElementById("name").value;
+            document.write("Thank you for your inquiry " +name+ "! I will get back to you within at most 2-3 business days!");
+        }
+    </script>
+</body>
+</html>
